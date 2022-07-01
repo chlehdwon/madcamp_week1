@@ -11,6 +11,7 @@ import android.widget.ProgressBar
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.*
 
@@ -39,7 +40,8 @@ class Fragment2 : Fragment() {
         imageRecycler = view.findViewById(R.id.image_recycler)
         progressBar = view.findViewById(R.id.recycler_progress)
 
-
+        imageRecycler?.layoutManager = GridLayoutManager(requireActivity().applicationContext, 3)
+        imageRecycler?.setHasFixedSize(true)
         // Storage permission
         if (activity?.let {
                 ContextCompat.checkSelfPermission(
