@@ -37,11 +37,10 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@android:color/white"
                 android:drawableTop="@drawable/message"
-                android:drawablePadding="20dp"
-                android:padding="10dp"
                 android:text="Message"
                 android:textAlignment="center"
-                android:textColor="#007AFF" />
+                android:textColor="#007AFF"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/dialog_call"
@@ -52,11 +51,10 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@android:color/white"
                 android:drawableTop="@drawable/phone"
-                android:drawablePadding="20dp"
-                android:padding="10dp"
                 android:text="Mobile"
                 android:textAlignment="center"
-                android:textColor="#007AFF" />
+                android:textColor="#007AFF"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/dialog_video"
@@ -67,11 +65,10 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@android:color/white"
                 android:drawableTop="@drawable/video"
-                android:drawablePadding="20dp"
-                android:padding="10dp"
                 android:text="video"
                 android:textAlignment="center"
-                android:textColor="#007AFF" />
+                android:textColor="#007AFF"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/dialog_mail"
@@ -83,11 +80,10 @@
                 android:layout_toRightOf="@+id/dialog_btn"
                 android:backgroundTint="@android:color/white"
                 android:drawableTop="@drawable/mail"
-                android:drawablePadding="20dp"
-                android:padding="10dp"
                 android:text="Mail"
                 android:textAlignment="center"
-                android:textColor="#007AFF" />
+                android:textColor="#007AFF"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -98,9 +94,10 @@
             android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/imageButtonCamera"
             android:background="#ffffff"
+            android:paddingLeft="20dp"
             android:text="Phone Number"
-            android:textColor="#000000"
-            android:textSize="17sp" />
+            android:textColorW="#000000"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/dialog_number"
@@ -108,9 +105,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="#ffffff"
+            android:paddingLeft="20dp"
             android:text="Phone Number"
             android:textColor="#007AFF"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
 
     </LinearLayout>
