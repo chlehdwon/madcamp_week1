@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1555" />
         <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/direct_message_24.xml" value="0.276" />
         <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.276" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1555" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/icon1_black.xml" value="0.1555" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/icon1_white.xml" value="0.1555" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/instagram.xml" value="0.1545" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/mail.xml" value="0.1555" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/message.xml" value="0.1555" />
+        <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/phone.xml" value="0.1555" />
         <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/profile_24.xml" value="0.276" />
         <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/drawable/video.xml" value="0.276" />
         <entry key="..\:/Users/cooki/Desktop/MadCamp_week1/app/src/main/res/layout/activity_image_full.xml" value="0.14583333333333334" />

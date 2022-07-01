@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         pager.adapter = pagerAdapter
         val tab = findViewById<TabLayout>(R.id.tablayout)
         tab.setupWithViewPager(pager)
-
+        tab.getTabAt(0)?.setIcon(R.drawable.icon1_white)
+        tab.getTabAt(1)?.setIcon(R.drawable.icon2_black)
+        tab.getTabAt(2)?.setIcon(R.drawable.icon3_black)
     }
 }
