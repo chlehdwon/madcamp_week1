@@ -50,7 +50,7 @@ class ImageAdapter(private var context: Context, private var imageList: ArrayLis
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return imageList.size
     }
 
 
