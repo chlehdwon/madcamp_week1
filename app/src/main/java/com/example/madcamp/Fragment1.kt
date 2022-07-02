@@ -24,7 +24,8 @@ private const val ARG_PARAM2 = "param2"
 class TestData(
     private var data1: String? = null,
     private var data2: String? = null,
-//    private var data3: String? = null
+    private var data3: String? = null,
+    private var data4: String? = null
 ){
     fun getData1(): String? {
         return data1
@@ -38,12 +39,18 @@ class TestData(
     fun setData2(address: String) {
         this.data2 = data2
     }
-//    fun getData3(): String? {
-//        return data3
-//    }
-//    fun setData3(type: String) {
-//        this.data3 = data3
-//    }
+    fun getData3(): String? {
+        return data3
+    }
+    fun setData3(type: String) {
+        this.data4 = data4
+    }
+    fun getData4(): String? {
+        return data3
+    }
+    fun setData4(type: String) {
+        this.data4 = data4
+    }
 }
 
 class Fragment1 : Fragment() {
@@ -74,7 +81,9 @@ class Fragment1 : Fragment() {
             val obj = jArray.getJSONObject(i)
             val name = obj.getString("Name")
             val number = obj.getString("Phone")
-            dataList.add(TestData(name, number))
+            val profile = obj.getString("Profile")
+            val url = obj.getString("url")
+            dataList.add(TestData(name, number,profile,url))
         }
 
         // Fragment에서 전달받은 list를 넘기면서 ListAdapter 생성
