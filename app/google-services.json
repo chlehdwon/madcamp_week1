@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "504833310339",
+    "project_id": "mapcamp-week1",
+    "storage_bucket": "mapcamp-week1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504833310339:android:73a7a160914b4e7ed1a5b6",
+        "android_client_info": {
+          "package_name": "com.example.madcamp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504833310339-bah637d6ges78eif7tgbja11t5fst3k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZF7ACT0JIlZebFjpXPOL87CzPG_RA-n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504833310339-bah637d6ges78eif7tgbja11t5fst3k4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
