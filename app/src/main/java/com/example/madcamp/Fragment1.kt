@@ -1,18 +1,16 @@
 package com.example.madcamp
 
+import android.content.Context
 import android.content.res.AssetManager
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.fragment.app.FragmentOnAttachListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
+import com.google.firebase.database.core.view.Change
 import org.json.JSONObject
 
 
@@ -53,7 +51,7 @@ class TestData(
     }
 }
 
-class Fragment1 : Fragment() {
+class Fragment1 : Fragment(){
     // RecyclerView.adapter에 지정할 Adapter
     private lateinit var listAdapter: ListAdapter
 
@@ -85,7 +83,6 @@ class Fragment1 : Fragment() {
             val url = obj.getString("url")
             dataList.add(TestData(name, number,profile,url))
         }
-
         // Fragment에서 전달받은 list를 넘기면서 ListAdapter 생성
         listAdapter = ListAdapter(dataList)
         val listView: RecyclerView = requireView().findViewById<View>(R.id.listView) as RecyclerView
@@ -93,6 +90,8 @@ class Fragment1 : Fragment() {
         // RecyclerView.adapter에 지정
         listView.adapter = listAdapter
     }
+
+
 
 
 }
