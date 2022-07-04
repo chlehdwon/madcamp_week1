@@ -28,26 +28,14 @@ class TestData(
     fun getData1(): String? {
         return data1
     }
-    fun setData1(name: String) {
-        this.data1 = data1
-    }
     fun getData2(): String? {
         return data2
-    }
-    fun setData2(address: String) {
-        this.data2 = data2
     }
     fun getData3(): String? {
         return data3
     }
-    fun setData3(type: String) {
-        this.data4 = data4
-    }
     fun getData4(): String? {
-        return data3
-    }
-    fun setData4(type: String) {
-        this.data4 = data4
+        return data4
     }
 }
 
