@@ -38,7 +38,6 @@ class Fragment2 : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_2, container, false)
         imageRecycler = view.findViewById(R.id.image_recycler)
-        progressBar = view.findViewById(R.id.recycler_progress)
 
         imageRecycler?.layoutManager = GridLayoutManager(requireActivity().applicationContext, 3)
         imageRecycler?.setHasFixedSize(true)
@@ -58,12 +57,12 @@ class Fragment2 : Fragment() {
             allPictures = ArrayList()
 
             if(allPictures!!.isEmpty()){
-                progressBar?.visibility = View.VISIBLE
                 // Get all images from Storage
                 allPictures = getAllImages()
                 // Set Adapter to recycler
+                imageRecycler!!.isNestedScrollingEnabled = false
+                imageRecycler!!.setHasFixedSize(false)
                 imageRecycler?.adapter = ImageAdapter(requireActivity().applicationContext, allPictures!!)
-                progressBar?.visibility = View.GONE
             }
             // Inflate the layout for this fragment
 

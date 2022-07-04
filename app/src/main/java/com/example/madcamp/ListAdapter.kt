@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import java.io.IOException
 import java.io.InputStream
 import java.net.HttpURLConnection
@@ -54,15 +55,16 @@ class ListAdapter(private var list: MutableList<TestData>): RecyclerView.Adapter
             var dialog_name: TextView = dialog!!.findViewById(R.id.dialog_name)
             var dialog_number: TextView = dialog!!.findViewById(R.id.dialog_number)
             var dialog_profile: TextView = dialog!!.findViewById(R.id.dialog_profile)
+            var dialog_image: ImageView = dialog!!.findViewById(R.id.dialog_img)
             var dialog_callbtn: Button = dialog!!.findViewById(R.id.dialog_call)
             var dialog_dmbtn: Button = dialog!!.findViewById(R.id.dialog_dm)
 
             dialog_name.setText(list.get(vHolder.adapterPosition).getData1())
             dialog_number.setText(list.get(vHolder.adapterPosition).getData2())
             dialog_profile.setText(list.get(vHolder.adapterPosition).getData3())
+            var dialog_url: String? = list.get(vHolder.adapterPosition).getData4()
 
-
-
+            Glide.with(parent.context).load(dialog_url).error(R.drawable.madcamp).into(dialog_image)
 
             dialog.show()
 
@@ -75,6 +77,7 @@ class ListAdapter(private var list: MutableList<TestData>): RecyclerView.Adapter
                 val intent = Intent(parent.context, CallActivity::class.java)
 
                 intent.putExtra("name", list.get(vHolder.adapterPosition).getData1())
+                intent.putExtra("url", list.get(vHolder.adapterPosition).getData4())
                 parent.context.startActivity(intent)
             }
 

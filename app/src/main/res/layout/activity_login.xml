@@ -18,7 +18,7 @@
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:src="@drawable/profile_icon" />
+        android:src="@drawable/madcamp" />
 
     <EditText
         android:id="@+id/edt_email"
