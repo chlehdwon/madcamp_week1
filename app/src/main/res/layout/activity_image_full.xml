@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ImageFullActivity"
-    android:layout_gravity="center_horizontal"
     android:background="@color/white"
+    android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_width="50dp"
             android:layout_height="58dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/profile_icon"
+            android:src="@drawable/madcamp"
             android:textStyle="bold"
             app:civ_border_color="@color/white"
             app:civ_border_width="2dp" />
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:text="2022 MadCamp"
             android:textColor="@android:color/black"
             android:textSize="15dp"
@@ -59,41 +59,59 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
 
-            <ImageView
+            <com.jackandphantom.androidlikebutton.AndroidLikeButton
+                android:id="@+id/likebtn"
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/like_icon" />
+                android:background="@drawable/ic_baseline_favorite_border_24"
+                app:circle_endColor="@color/green"
+                app:circle_startColor="@color/black"
+                app:dot_active="true">
+
+            </com.jackandphantom.androidlikebutton.AndroidLikeButton>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
-                android:src="@drawable/comment_icon" />
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/comment" />
 
             <ImageButton
                 android:id="@+id/btndm"
                 android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="7dp"
-                android:src="@drawable/ic_baseline_send_24"
-                android:background="@color/white"
-                android:rotation="-45"
-                android:scaleType="center"
-                />
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sent" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right">
 
-                <ImageView
+                <!--                <ImageView-->
+                <!--                    android:layout_width="30dp"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:src="@drawable/save_icon"-->
+                <!--                    />-->
+
+                <com.jackandphantom.androidlikebutton.AndroidLikeButton
                     android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/save_icon"
-                    android:layout_gravity="right"/>
+                    android:layout_height="30dp"
+                    android:id="@+id/savebtn"
+                    android:background="@drawable/ic_baseline_bookmark_border_24"
+                    app:circle_startColor="@color/black"
+                    app:circle_endColor="@color/green"
+                    app:dot_active="true"
+                    app:dot_color_1="#753930"
+                    app:dot_color_2="#804596">
+
+                </com.jackandphantom.androidlikebutton.AndroidLikeButton>
+
 
             </LinearLayout>
 
@@ -101,6 +119,23 @@
 
 
         </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="2022 MadCamp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="View all comments" />
+
 
     </LinearLayout>
 
