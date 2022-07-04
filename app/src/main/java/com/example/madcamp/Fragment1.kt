@@ -1,17 +1,26 @@
 package com.example.madcamp
 
+import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.content.res.AssetManager
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentOnAttachListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.google.firebase.database.core.view.Change
 import org.json.JSONObject
+import java.util.Calendar.getInstance
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -49,7 +58,18 @@ class Fragment1 : Fragment(){
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_1, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_1, container, false)
+
+        val myCard: Button = view!!.findViewById(R.id.my_card)
+        val dialog: MyDF = MyDF().getInstance()
+        myCard.setOnClickListener {
+            activity?.supportFragmentManager?.let { fragmentManager ->
+                dialog.show(fragmentManager, "TAG_DIALOG_EVENT")
+            }
+        }
+
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -76,10 +96,9 @@ class Fragment1 : Fragment(){
         val listView: RecyclerView = requireView().findViewById<View>(R.id.listView) as RecyclerView
         listView.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
         // RecyclerView.adapter에 지정
+        listView.isNestedScrollingEnabled = false
+        listView.setHasFixedSize(false)
         listView.adapter = listAdapter
+
     }
-
-
-
-
 }
