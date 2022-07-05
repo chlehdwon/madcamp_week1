@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+
     fun changer(index: Int){
         var viewpager: ViewPager = findViewById(R.id.viewpager)
         viewpager.setCurrentItem(index)

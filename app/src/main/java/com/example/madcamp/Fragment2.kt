@@ -42,30 +42,41 @@ class Fragment2 : Fragment() {
         imageRecycler?.layoutManager = GridLayoutManager(requireActivity().applicationContext, 3)
         imageRecycler?.setHasFixedSize(true)
         // Storage permission
-        if (activity?.let {
-                ContextCompat.checkSelfPermission(
-                    it, Manifest.permission.READ_CALENDAR
-                )
-            } != PackageManager.PERMISSION_GRANTED
-        ) {
-            activity?.let {
-                ActivityCompat.requestPermissions(
-                    it, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
-                    101
-                )
-            }
-            allPictures = ArrayList()
+//        if (activity?.let {
+//                ContextCompat.checkSelfPermission(
+//                    it, Manifest.permission.READ_CALENDAR
+//                )
+//            } != PackageManager.PERMISSION_GRANTED
+//        ) {
+//            activity?.let {
+//                ActivityCompat.requestPermissions(
+//                    it, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+//                    101
+//                )
+//            }
+//            allPictures = ArrayList()
+//
+//            if(allPictures!!.isEmpty()){
+//                // Get all images from Storage
+//                allPictures = getAllImages()
+//                // Set Adapter to recycler
+//                imageRecycler!!.isNestedScrollingEnabled = false
+//                imageRecycler!!.setHasFixedSize(false)
+//                imageRecycler?.adapter = ImageAdapter(requireActivity().applicationContext, allPictures!!)
+//            }
+//            // Inflate the layout for this fragment
+//
+//        }
 
-            if(allPictures!!.isEmpty()){
-                // Get all images from Storage
-                allPictures = getAllImages()
-                // Set Adapter to recycler
-                imageRecycler!!.isNestedScrollingEnabled = false
-                imageRecycler!!.setHasFixedSize(false)
-                imageRecycler?.adapter = ImageAdapter(requireActivity().applicationContext, allPictures!!)
-            }
-            // Inflate the layout for this fragment
+        allPictures = ArrayList()
 
+        if(allPictures!!.isEmpty()){
+            // Get all images from Storage
+            allPictures = getAllImages()
+            // Set Adapter to recycler
+            imageRecycler!!.isNestedScrollingEnabled = false
+            imageRecycler!!.setHasFixedSize(false)
+            imageRecycler?.adapter = ImageAdapter(requireActivity().applicationContext, allPictures!!)
         }
         return view
     }
