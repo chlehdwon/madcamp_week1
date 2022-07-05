@@ -28,7 +28,7 @@
 ***
 
 # Application Information
-## 0.Login & SignUp
+## 0. Login & SignUp
 
 <img src="https://user-images.githubusercontent.com/68576681/177273659-f9427d7f-33de-47d6-9ed2-6c4a791f6416.gif" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177275755-e7c8f0ad-66c0-4bc3-b695-47066ea39029.jpg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177275760-c971c2db-e492-48c9-afd7-e67f9eafae38.jpg" width="200" height="400">
 ### Major features
@@ -42,7 +42,7 @@
 * Firebase를 사용하여 모든 유저들의 정보를 서버에 저장해놓았습니다
 * 따라서 다른 기기에서도 동일한 ID로 로그인 할 수 있습니다
 
-## 1.Tab1 - 연락처
+## 1. Tab1 - 연락처
 
 <img src="https://user-images.githubusercontent.com/68576681/177273675-c6d1120a-2c9f-4ebc-a1ac-f01f4c3a6b2f.gif" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177277727-53a7753e-7cbe-4dd7-89c3-b4389ec81eac.jpg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177277729-40e3eee9-9d14-4c35-bf74-8bb32100a94b.jpg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177277735-9118e859-c626-4971-b0d5-b966ea07ce7b.jpg" width="200" height="400"> 
 ### Major features
@@ -63,7 +63,7 @@
 * Viewer의 item을 터치시, adapter에서 Dialog를 띄워 추가 프로필을 확인할 수 있습니다
 * MyCard 터치시, fragment에서 FragmentDialog를 띄워 추가 프로필을 확인할 수 있습니다
 
-## 2.Tab2 - 갤러리
+## 2. Tab2 - 갤러리
 
 <img src="https://user-images.githubusercontent.com/68576681/177276000-107f4dfc-96c5-4ac8-b19d-7333732a7ed4.gif" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177277676-1e837306-c43c-4305-a5bd-d5d8fca9aedf.jpg" width="200" height="400"> <img src="https://user-images.githubusercontent.com/68576681/177277682-dd60dac1-7654-4e10-a5f4-90a5f91bb9ae.jpg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177277684-f33ba12b-7e3d-4b5b-8509-39c6c7353089.jpg" width="200" height="400"> 
 ### Major features
@@ -77,7 +77,7 @@
 * com.jackandphantom.android:androidlikebutton:1.2.0을 사용하여 버튼 애니메이션을 구현하였습니다
 * NestedScrollView를 사용해 모든 요소들이 같이 움직일 수 있도록 하였습니다
 
-## 3.Tab3 - Direct Message
+## 3. Tab3 - Direct Message
 
 <img src="https://user-images.githubusercontent.com/68576681/177273474-0471dd5e-8ff1-4517-a97a-fd411e3ca207.gif" width="200" height="400">
 ### Major features
