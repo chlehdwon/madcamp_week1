@@ -59,7 +59,9 @@ class ChatActivity : AppCompatActivity() {
 
                     for(postSnapshot in snapshot.children){
                         val message = postSnapshot.getValue(Message::class.java)
-                        messageList.add(message!!)
+                        if(!message?.message.isNullOrEmpty()){
+                            messageList.add(message!!)
+                        }
                     }
 
                     messageAdapter.notifyDataSetChanged()
@@ -75,12 +77,13 @@ class ChatActivity : AppCompatActivity() {
         sendButton.setOnClickListener{
             val message = messageBox.text.toString()
             val messageObject = Message(message,senderUid)
-
-            mDbRef.child("chats").child(senderRoom!!).child("messages").push()
-                .setValue(messageObject).addOnSuccessListener {
-                    mDbRef.child("chats").child(receiverRoom!!).child("messages").push()
-                        .setValue(messageObject)
-                }
+            if(!message.isNullOrEmpty()){
+                mDbRef.child("chats").child(senderRoom!!).child("messages").push()
+                    .setValue(messageObject).addOnSuccessListener {
+                        mDbRef.child("chats").child(receiverRoom!!).child("messages").push()
+                            .setValue(messageObject)
+                    }
+            }
             messageBox.setText("")
         }
     }
