@@ -70,8 +70,8 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/ic_baseline_favorite_border_24"
-                app:circle_endColor="@color/green"
-                app:circle_startColor="@color/black"
+                app:circle_endColor="@color/white"
+                app:circle_startColor="@color/white"
                 app:dot_active="true">
 
             </com.jackandphantom.androidlikebutton.AndroidLikeButton>
@@ -104,11 +104,9 @@
                     android:layout_height="30dp"
                     android:id="@+id/savebtn"
                     android:background="@drawable/ic_baseline_bookmark_border_24"
-                    app:circle_startColor="@color/black"
-                    app:circle_endColor="@color/green"
-                    app:dot_active="true"
-                    app:dot_color_1="#753930"
-                    app:dot_color_2="#804596">
+                    app:circle_endColor="@color/white"
+                    app:circle_startColor="@color/white"
+                    app:dot_active="true">
 
                 </com.jackandphantom.androidlikebutton.AndroidLikeButton>
 
@@ -134,7 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="13dp"
-            android:text="View all comments" />
+            android:text="No comments" />
 
 
     </LinearLayout>
