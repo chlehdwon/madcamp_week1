@@ -84,7 +84,7 @@
 
 ## 3. Tab3 - Direct Message
 
-<img src="https://user-images.githubusercontent.com/68576681/177273474-0471dd5e-8ff1-4517-a97a-fd411e3ca207.gif" width="200" height="400">
+<img src="https://user-images.githubusercontent.com/68576681/177273474-0471dd5e-8ff1-4517-a97a-fd411e3ca207.gif" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177282112-314a298b-bab5-4e2c-a8e0-4e1931dcd22a.jpg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177282173-30249241-e273-4e48-87df-c7db7cb140a4.jpg" width="200" height="400">  <img src="https://user-images.githubusercontent.com/68576681/177283677-ae249225-5ed3-4374-a847-c2e4e9edbad8.PNG" width="200" height="400">
 
 ### Major features
 * 자신을 제외한 사용자들을 띄웁니다
@@ -96,6 +96,8 @@
 * Firebase를 통해 사용자들이 보낸 메세지들을 서버에 모두 저장합니다
 * senderID와 userID를 통해 각 사용자에 해당하는 메세지들을 받아올 수 있습니다
 * ValueEventListener을 통해 변경사항이 생길 시 창을 업데이트 해줍니다
+<img src="https://user-images.githubusercontent.com/68576681/177283305-d2296db3-6c72-4678-b3a8-d05c3b0c5afb.PNG" height="400">
+
 
 ## 4. Future Work(언젠가)
 * json 파일이 아닌 Firebase와 연동하여 Tab1과 Tab3가 자동으로 연동될 예정입니다
