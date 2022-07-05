@@ -80,6 +80,7 @@
 ## 3. Tab3 - Direct Message
 
 <img src="https://user-images.githubusercontent.com/68576681/177273474-0471dd5e-8ff1-4517-a97a-fd411e3ca207.gif" width="200" height="400">
+
 ### Major features
 * 자신을 제외한 사용자들을 띄웁니다
 * 사용자 터치 시 그 사용자와 채팅을 할 수 있습니다
