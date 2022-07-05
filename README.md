@@ -46,7 +46,7 @@
 ### Technology Used
 * Firebase를 사용하여 모든 유저들의 정보를 서버에 저장해놓았습니다
 * 따라서 다른 기기에서도 동일한 ID로 로그인 할 수 있습니다
-<img src="https://user-images.githubusercontent.com/68576681/177283305-d2296db3-6c72-4678-b3a8-d05c3b0c5afb.PNG" height="400">
+<img src="https://user-images.githubusercontent.com/68576681/177285926-a6c1b166-fa71-46ab-b383-7c00b57a0018.png" height="400">
 
 ## 1. Tab1 - Contact
 
