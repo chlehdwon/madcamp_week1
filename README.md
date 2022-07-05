@@ -46,6 +46,7 @@
 ### Technology Used
 * Firebase를 사용하여 모든 유저들의 정보를 서버에 저장해놓았습니다
 * 따라서 다른 기기에서도 동일한 ID로 로그인 할 수 있습니다
+<img src="https://user-images.githubusercontent.com/68576681/177283305-d2296db3-6c72-4678-b3a8-d05c3b0c5afb.PNG" height="400">
 
 ## 1. Tab1 - Contact
 
@@ -96,11 +97,12 @@
 * Firebase를 통해 사용자들이 보낸 메세지들을 서버에 모두 저장합니다
 * senderID와 userID를 통해 각 사용자에 해당하는 메세지들을 받아올 수 있습니다
 * ValueEventListener을 통해 변경사항이 생길 시 창을 업데이트 해줍니다
-<img src="https://user-images.githubusercontent.com/68576681/177283305-d2296db3-6c72-4678-b3a8-d05c3b0c5afb.PNG" height="400">
+<img src="https://user-images.githubusercontent.com/68576681/177285932-e0970a50-c7d5-4964-8d1a-18ad9e2a59d8.png" height="400">
 
 
 ## 4. Future Work(언젠가)
 * json 파일이 아닌 Firebase와 연동하여 Tab1과 Tab3가 자동으로 연동될 예정입니다
 * Tab1에서 사용자의 정보 및 사진을 업데이트 할 수 있게 할 예정입니다
 * Tab2에서 DM 버튼 터치시 Tab3로 이동되게 업데이트 할 예정입니다
+* Tab2에서 Likes시 count 추가 기능 및 댓글 기능을 구현 할 예정입니다
 * 계정을 삭제하는 기능을 구현할 예정입니다
