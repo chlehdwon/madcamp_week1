@@ -9,8 +9,8 @@
 ***
 
 # Developer Information
-* 김아나스타시야 (부산대학교 정보컴퓨터공학과) 
-* 최동원 (KAIST 전기및전자공학부) 
+* [김아나스타시야](https://github.com/anista13) (부산대학교 정보컴퓨터공학과) 
+* [최동원](https://github.com/chlehdwon) (KAIST 전기및전자공학부) 
 ***
 
 # Development Environment
