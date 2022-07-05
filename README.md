@@ -1,6 +1,13 @@
 # <img src="https://user-images.githubusercontent.com/68576681/177258571-64e4855d-bdca-4335-b221-e23d54708cbe.jpg" width="30" height="30"> 몰입스타그램
 > 2분반 1주차(2022.06.29~07.05) By 김아나스타시야, 최동원
 
+# Table Of Contents
+* [Project Summary](#project-summary)
+* [Developer Information](#developer-information)
+* [Development Environment](#development-environment)
+* [Application Information](#application-information)
+***
+
 # Project Summary
 * 분반 사람들과 소통할 수 있는 Instagram 컨셉의 어플리케이션입니다
 * json 파일을 통해 연락처를 불러와 프로필을 볼 수 있습니다
